@@ -1,10 +1,10 @@
 Serverless Application using AWS
 
-Objective
+Objective:
 
 Developed a basic serverless application using AWS services to understand serverless architecture, cloud deployment, monitoring, and alerting.
 
-AWS Services Used
+AWS Services Used:
 
 * AWS Lambda
 * Amazon S3
@@ -12,7 +12,7 @@ AWS Services Used
 * Amazon CloudWatch
 * Amazon SNS
 
-Features
+Features:
 
 * Implemented a serverless application using AWS Lambda.
 * Used Amazon S3 for static website hosting/storage.
@@ -20,12 +20,27 @@ Features
 * Monitored application logs using Amazon CloudWatch.
 * Configured Amazon SNS to send email notifications based on CloudWatch alarms.
 
-Learning Outcomes
+Learning Outcomes:
 
 * Understood serverless architecture and event-driven applications.
 * Gained hands-on experience with AWS monitoring and alerting services.
 * Learned how AWS services integrate to build scalable cloud applications.
 
-Project Architecture
+Project Architecture:
 
-User → Amazon S3 → API Gateway → AWS Lambda → CloudWatch → SNS Email Notification
+                 User
+                   │
+                   ▼
+        Amazon S3 (Static Website)
+                   │
+                   ▼
+            AWS API Gateway
+                   │
+                   ▼
+              AWS Lambda
+                   │
+                   ▼
+           Amazon CloudWatch
+                   │
+                   ▼
+      Amazon SNS (Email Notification)
