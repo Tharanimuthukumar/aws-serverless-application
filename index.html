@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Serverless Project using AWS with DevOps</h1>
+  <button onclick="callAPI()">Click </button>
+
+  <script>
+    function callAPI() {
+      fetch("https://ll2r68n3f1.execute-api.ap-south-1.amazonaws.com/myfunction")
+      .then(res => res.text())
+      .then(data => alert(data))
+      .catch(err => alert("Error: "+ err));
+    }
+  </script>
+</body>
+</html>
