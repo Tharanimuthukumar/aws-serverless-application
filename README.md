@@ -44,3 +44,4 @@ Project Architecture:
                    │
                    ▼
       Amazon SNS (Email Notification)
+
